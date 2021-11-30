@@ -71,7 +71,7 @@ Execute different SQL queries
 ```
 SELECT * FROM Emails;
 SELECT * FROM Address;
-SELECT * FROM Devices WHERE Device='Device4';
+SELECT * FROM Devices WHERE Device='Device4' OR Device='Device5';
 SELECT * FROM Emails GROUP BY id;
 SELECT * FROM Devices ORDER BY Device;
 TRUNCATE TABLE Emails;
