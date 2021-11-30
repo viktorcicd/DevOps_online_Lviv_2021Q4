@@ -11,9 +11,33 @@ Installed and configured MySQL Server on Ubuntu VM.
   show databases;
 
   create database Sales;
+  
+  use Sales;
+  
+  CREATE USER 'victor'@'localhost' IDENTIFIED BY 'NewTestPassw0rd!';
+  
+  GRANT ALL PRIVILEGES ON *.* TO 'victor'@'localhost';
+  
+  flush privileges;
+  
+  exit;
+  
+  mysql -u victor -p
 ```
 
+Created and filled in tables.
 
+```sh
+
+CREATE TABLE table_name (
+            id INT NOT NULL AUTO_INCREMENT,
+            column_1 VARCHAR(255) NOT NULL,
+            column_2 DATE NOT NULL,
+            column_3 DECIMAL(10 , 2 ) NULL,
+            column_4 INTEGER,
+            PRIMARY KEY (id)
+);
+```
 
 ```sh
 CREATE TABLE `device` (
@@ -35,6 +59,8 @@ CREATE TABLE `users` (
   `permissions` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+GRANT type_of_permission ON Sales.* TO 'username'@'localhost';
+SHOW GRANTS FOR 'username'@'localhost';
 
 Populated table rows with data using INSERT. The result is as follows:
 
