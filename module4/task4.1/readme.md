@@ -74,13 +74,24 @@ SELECT * FROM Address;
 SELECT * FROM Devices WHERE Device='Device4';
 SELECT * FROM Emails GROUP BY id;
 SELECT * FROM Devices ORDER BY Device;
+TRUNCATE TABLE Emails;
 ```
 ![devices](./image/device.png "devices")
 
+
+Create new users and check privilegies
 ```
-TRUNCATE TABLE Emails;
-GRANT type_of_permission ON Sales.* TO 'username'@'localhost';
-SHOW GRANTS FOR 'username'@'localhost';
+CREATE USER 'agent1'@'localhost' IDENTIFIED BY 'passwd1';
+CREATE USER 'agent2'@'localhost' IDENTIFIED BY 'passwd2';
+CREATE USER 'agent3'@'localhost' IDENTIFIED BY 'passwd3';
+CREATE USER 'agent4'@'localhost' IDENTIFIED BY 'passwd4';
+
+GRANT SELECT,DELETE ON Sales.* TO 'agent1'@'localhost';
+GRANT DROP ON Sales.* TO 'agent2'@'localhost';
+GRANT ALTER,INSERT ON Sales.* TO 'agent3'@'localhost';
+GRANT CREATE ON Sales.* TO 'agent4'@'localhost' WITH GRANT OPTION;
+
+SHOW GRANTS FOR 'agent3'@'localhost';
 
 Populated table rows with data using INSERT. The result is as follows:
 
