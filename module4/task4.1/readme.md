@@ -11,7 +11,7 @@ Installed and configured MySQL Server on Ubuntu VM.
   show databases;
 
   create database Sales;
-
+```
 
 
 
