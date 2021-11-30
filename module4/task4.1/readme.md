@@ -1,7 +1,10 @@
 # Database administration
-### Part 1 - Local MySQL database
+### Part 1 
 
 Installed MySQL Server on Ubuntu VM. Created a database with the following schema:
+
+ sudo apt-get install sql-server
+
 
 ```sh
 CREATE TABLE `device` (
