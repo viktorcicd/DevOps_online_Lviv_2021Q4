@@ -61,42 +61,37 @@ sudo mysqlimport --fields-terminated-by=, \
              Sales \
              Address.csv
 ```
+![Emails](./image/csv.png "Emails")
 
-```sh
-CREATE TABLE `device` (
-  `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
-  `model` varchar(255) NOT NULL,
-  `ddns` varchar(255) NOT NULL,
-  `status` enum('up','down','unknown') NOT NULL,
-  KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-CREATE TABLE `services` (
-  `device_id` int(9) unsigned NOT NULL,
-  `vpn` varchar(255) NOT NULL,
-  `dhcp` enum('true','false') NOT NULL,
-  `dns` set('true','false') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-CREATE TABLE `users` (
-  `device_id` int(9) unsigned NOT NULL,
-  `user` varchar(255) NOT NULL,
-  `permissions` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+![Emails](./image/table1.png "Emails")
+
+
+Execute different SQL queries
+
 ```
+SELECT * FROM Emails;
+SELECT * FROM Address;
+SELECT * FROM Devices WHERE Device='Device4';
+SELECT * FROM Emails GROUP BY id;
+SELECT * FROM Devices ORDER BY Device;
+
+
 TRUNCATE TABLE Emails;
 GRANT type_of_permission ON Sales.* TO 'username'@'localhost';
 SHOW GRANTS FOR 'username'@'localhost';
 
 Populated table rows with data using INSERT. The result is as follows:
 
-![Tables](./images/tables.png "Tables")
+
 
 I used a mock database of MikroTik routers that I manage, listing device models, services, users, etc.
 
 Performed several queries as per task:
 
-![Queries](./images/queries.png "Queries")
+
 
 Added users with different permissions:
+```
 
 ```sh
 mysql> CREATE USER user1@localhost IDENTIFIED BY passwd1;
