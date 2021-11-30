@@ -25,18 +25,41 @@ Installed and configured MySQL Server on Ubuntu VM.
   mysql -u victor -p
 ```
 
-Created and filled in tables.
+Created and filled in tables from csv by using mysqlimport.
 
 ```sh
 
-CREATE TABLE table_name (
+CREATE TABLE Emails (
             id INT NOT NULL AUTO_INCREMENT,
-            column_1 VARCHAR(255) NOT NULL,
-            column_2 DATE NOT NULL,
-            column_3 DECIMAL(10 , 2 ) NULL,
-            column_4 INTEGER,
+            Agent VARCHAR(150) NOT NULL,
+            Email VARCHAR(150) NOT NULL,           
             PRIMARY KEY (id)
 );
+CREATE TABLE Devices (
+            id INT NOT NULL AUTO_INCREMENT,
+            Device VARCHAR(150) NOT NULL,
+            Model VARCHAR(150) NOT NULL,           
+            PRIMARY KEY (id)
+);
+CREATE TABLE Address (
+            id INT NOT NULL AUTO_INCREMENT,
+            City VARCHAR(150) NOT NULL,
+            Country VARCHAR(150) NOT NULL,           
+            PRIMARY KEY (id)
+);
+
+sudo mysqlimport --fields-terminated-by=, \
+            --local -u root \
+             Sales \
+             Emails.csv
+sudo mysqlimport --fields-terminated-by=, \
+            --local -u root \
+             Sales \
+             Devices.csv
+sudo mysqlimport --fields-terminated-by=, \
+            --local -u root \
+             Sales \
+             Address.csv
 ```
 
 ```sh
@@ -59,6 +82,7 @@ CREATE TABLE `users` (
   `permissions` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+TRUNCATE TABLE Emails;
 GRANT type_of_permission ON Sales.* TO 'username'@'localhost';
 SHOW GRANTS FOR 'username'@'localhost';
 
