@@ -3,6 +3,7 @@
 
 Installed and configured MySQL Server on Ubuntu VM. 
 
+```sh
   sudo apt install mysql-server
 
   sudo mysql -u root 
