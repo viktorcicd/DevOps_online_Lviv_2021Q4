@@ -3,13 +3,13 @@
 
 Installed and configured MySQL Server on Ubuntu VM. 
 
-sudo apt install mysql-server
+  sudo apt install mysql-server
 
-sudo mysql -u root 
+  sudo mysql -u root 
 
-show databases;
+  show databases;
 
-create database Sales;
+  create database Sales;
 
 
 
