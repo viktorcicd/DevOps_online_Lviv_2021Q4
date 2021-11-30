@@ -74,8 +74,10 @@ SELECT * FROM Address;
 SELECT * FROM Devices WHERE Device='Device4';
 SELECT * FROM Emails GROUP BY id;
 SELECT * FROM Devices ORDER BY Device;
+```
+![devices](./image/device.png "devices")
 
-
+```
 TRUNCATE TABLE Emails;
 GRANT type_of_permission ON Sales.* TO 'username'@'localhost';
 SHOW GRANTS FOR 'username'@'localhost';
