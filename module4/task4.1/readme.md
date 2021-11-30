@@ -1,9 +1,17 @@
 # Database administration
 ### Part 1 
 
-Installed MySQL Server on Ubuntu VM. Created a database with the following schema:
+Installed and configured MySQL Server on Ubuntu VM. 
 
- sudo apt-get install sql-server
+sudo apt install mysql-server
+
+sudo mysql -u root 
+
+show databases;
+
+create database Sales;
+
+
 
 
 ```sh
