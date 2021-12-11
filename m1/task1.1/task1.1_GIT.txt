@@ -1,0 +1,34 @@
+e87f19d HEAD@{0}: merge develop: Fast-forward
+9651b50 HEAD@{1}: checkout: moving from develop to master
+e87f19d HEAD@{2}: commit (merge): merge manually fixed
+df07f4a HEAD@{3}: merge images: Fast-forward
+bbeba96 HEAD@{4}: checkout: moving from styles to develop
+698241e HEAD@{5}: commit: add styles
+bbeba96 HEAD@{6}: checkout: moving from develop to styles
+bbeba96 HEAD@{7}: checkout: moving from images to develop
+df07f4a HEAD@{8}: commit: index change
+9511730 HEAD@{9}: checkout: moving from master to images
+9651b50 HEAD@{10}: checkout: moving from images to master
+9511730 HEAD@{11}: checkout: moving from develop to images
+bbeba96 HEAD@{12}: checkout: moving from images to develop
+9511730 HEAD@{13}: checkout: moving from develop to images
+bbeba96 HEAD@{14}: checkout: moving from develop to develop
+bbeba96 HEAD@{15}: checkout: moving from images to develop
+9511730 HEAD@{16}: commit: rename m4->m1
+bbeba96 HEAD@{17}: checkout: moving from develop to images
+bbeba96 HEAD@{18}: checkout: moving from master to develop
+9651b50 HEAD@{19}: checkout: moving from develop to master
+bbeba96 HEAD@{20}: checkout: moving from develop to develop
+bbeba96 HEAD@{21}: checkout: moving from master to develop
+9651b50 HEAD@{22}: checkout: moving from images to master
+bbeba96 HEAD@{23}: checkout: moving from develop to images
+bbeba96 HEAD@{24}: checkout: moving from images to develop
+bbeba96 HEAD@{25}: checkout: moving from develop to images
+bbeba96 HEAD@{26}: Branch: renamed refs/heads/victest to refs/heads/develop
+bbeba96 HEAD@{28}: commit: init readme.txt
+9651b50 HEAD@{29}: checkout: moving from master to victest
+9651b50 HEAD@{30}: commit: init readme.txt
+3d4e988 HEAD@{31}: commit: removed old folder2
+fc3740f HEAD@{32}: commit: removed old folder
+3e8459c HEAD@{33}: commit: try 4 to rename
+fe22d35 HEAD@{34}: initial pull
