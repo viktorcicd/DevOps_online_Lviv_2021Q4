@@ -28,6 +28,8 @@ git checkout -b styles
 ```
  ![branch](./images/branch.png "branch")
  
+ ![folders](./images/folders.png "folders")
+ 
 ```
  git add .
  git status
