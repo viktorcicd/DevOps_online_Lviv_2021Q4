@@ -2,9 +2,11 @@
 
 ### TASK 1.1
 
-```
-git init
 
+Lets create and configure a local git repository
+![conf](./images/conf.png "config")
+
+```
 git clone git@github.com:viktorcicd/DevOps_online_Lviv_2021Q4.git
 
 git add .
