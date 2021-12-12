@@ -53,4 +53,5 @@ git checkout -b styles
 
 ![reflog](./images/reflog.png "reflog")
  
+ DevOps is a metodology that solves the issues in cooperation between development and operation/production teams. In other words Devops specialists have to understand, implement  processes of the development and operation cycle.
  
