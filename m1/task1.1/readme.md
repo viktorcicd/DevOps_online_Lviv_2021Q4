@@ -3,18 +3,30 @@
 ### TASK 1.1
 
 
-Lets create and configure a local git repository
+Create and configure a local git repository
+
 ![conf](./images/conf.png "config")
+
+Create and configured a Github repository
+
+![github](./images/github.png "github")
+
+
+Create branches and provide manipulations according to the task
 
 ```
 git clone git@github.com:viktorcicd/DevOps_online_Lviv_2021Q4.git
 
+```
+Following commands were used during the process
+```
 git add .
 git commit -m "init commit"
-
 git checkout -b develop
 git checkout -b images
 git checkout -b styles
+
+ ![branch](./images/branch.png "branch")
 
  git add .
  git status
@@ -34,5 +46,7 @@ git checkout -b styles
  git log -p
  git log -p --all
  
+ ```
+
  
-```
+ 
