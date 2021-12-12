@@ -25,9 +25,10 @@ git commit -m "init commit"
 git checkout -b develop
 git checkout -b images
 git checkout -b styles
-
+```
  ![branch](./images/branch.png "branch")
-
+ 
+```
  git add .
  git status
  git commit -m "add styles"
@@ -39,7 +40,6 @@ git checkout -b styles
  git add index.html
  git status
  git commit -m "merge manually fixed"
- git status
  git checkout master
  git merge develop
  git log
@@ -47,6 +47,8 @@ git checkout -b styles
  git log -p --all
  
  ```
+![merge](./images/merge.png "merge")
 
+![reflog](./images/reflog.png "reflog")
  
  
