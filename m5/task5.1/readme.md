@@ -1,6 +1,6 @@
-##Task1
+## Task1
 
-###Part1
+### Part1
 
 login as root:
 ```
@@ -37,14 +37,28 @@ ac -p -d  Print totals for each day for each user
 man finger
 ```
 Checking list of directories with ls:
-
+```
 ls -alh
 
 ![ls](./images/ls2.png "ls")
-
+```
 ### Part2
 
-I used the following command:
+I used the following commands:
+```
 tree -L -P '*c*'
 tree -P '*.png' --prune
+```
+![tree](./images/c.png "tree")
+
+![tree](./images/tree.png "tree")
+
+Checking the file type:
+
+```
+file
+```
+
+![file](./images/type.png "file")
+
 
