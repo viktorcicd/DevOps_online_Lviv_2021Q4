@@ -11,3 +11,13 @@ w
 history
 auditd , acct (ac -p -d) lascomm
 
+usermod -l victor victor2
+chfn victor
+
+man w -i -s
+man acct
+info passwd 
+
+
+
+
