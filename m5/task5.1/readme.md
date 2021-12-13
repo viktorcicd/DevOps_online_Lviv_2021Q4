@@ -107,8 +107,15 @@ ln -s labwork2
 ```
 hard link specified path to the body of the file so it was still 
 working even after deletion of the original file
-
-
-
+```
+Using locate:
+```
+locate -A squid
+locate -A traceroute
+```
+To check partitions:
+```
+df
+```
 
 
