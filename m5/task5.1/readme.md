@@ -3,9 +3,9 @@
 Part1
 
 login as root:
-`
+```
 sudo su
-`
+```
 passwd victor
 etc/passwd
 
