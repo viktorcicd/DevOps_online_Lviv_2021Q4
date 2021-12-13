@@ -19,5 +19,5 @@ man acct
 info passwd 
 
 
-
+tree -P '*.png' --prune
 
