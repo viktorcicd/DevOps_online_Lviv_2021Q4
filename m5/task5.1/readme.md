@@ -73,8 +73,34 @@ Checking ls with several options:
 ```
 ls -a -l -h
 ls github -R
+
+option -a allow to see hidden files and catalogs
+option -l provide information about size,permissions,ownership, etc..
 ```
 ![lsr](./images/lsr.png "lsr")
+
+Performing following operations:
+```
+cd
+mkdir mytest
+cd mytest
+ls -alh / > rootinfo
+nano rootinfo
+cp rootinfo ~/
+cp rootinfo /home/victor
+cd
+rm -R mytest
+rm rootinfo
+```
+Performing the following operations:
+```
+mkdir test
+cp .bash_history test/labwork2
+cd test
+ln labwork2
+ln -s labwork2
+```
+![link](./images/link.png "link")
 
 
 
