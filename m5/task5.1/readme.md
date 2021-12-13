@@ -17,15 +17,26 @@ users and history/log of excuted commands:
 passwd -a -S
 w
 history
-auditd , acct (ac -p -d) lascomm
+auditd , ac -p -d lascomm
 ```
 
+To change personal info:
+```
 usermod -l victor victor2
 chfn victor
-
-man w -i -s
+```
+Checked manual on the following commands:
+```
+man w
 man acct
 info passwd 
+
+w -i -s  to use the short format and display ip address
+ac -p -d  Print totals for each day for each user
+
+man finger
+```
+Checking list of directories with ls:
 
 
 tree -P '*.png' --prune
