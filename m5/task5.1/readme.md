@@ -102,5 +102,13 @@ ln -s labwork2
 ```
 ![link](./images/link.png "link")
 
+![link](./images/link2.png "link")
+
+```
+hard link specified path to the body of the file so it was still 
+working even after deletion of the original file
+
+
+
 
 
