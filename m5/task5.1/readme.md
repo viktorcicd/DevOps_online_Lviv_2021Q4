@@ -73,4 +73,8 @@ Checking ls with several options:
 ```
 ls -a -l -h
 ls github -R
+```
+![lsr](./images/lsr.png "lsr")
+
+
 
