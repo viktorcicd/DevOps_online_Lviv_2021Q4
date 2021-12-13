@@ -1,6 +1,6 @@
-## Task1
+## Task 1
 
-### Part1
+### Part 1
 
 login as root:
 ```
@@ -42,7 +42,7 @@ ls -alh
 
 ![ls](./images/ls2.png "ls")
 ```
-### Part2
+### Part 2
 
 I used the following commands:
 ```
@@ -53,7 +53,7 @@ tree -P '*.png' --prune
 
 ![tree](./images/tree.png "tree")
 
-Checking the file type:
+Checking the file type with the following command:
 
 ```
 file
@@ -61,4 +61,16 @@ file
 
 ![file](./images/type.png "file")
 
+To move directly to home directory used:
+```
+cd
+cd ~
+
+Absolute:
+cd /home/victor
+```
+Checking ls with several options:
+```
+ls -a -l -h
+ls github -R
 
