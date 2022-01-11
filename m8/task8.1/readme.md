@@ -1,7 +1,7 @@
 #Реализовать  скрипт,  который  решает  квадратное  уравнение  вида 𝑎𝑥ଶ+𝑏𝑥+𝑐=0. D = b2 − 4ac.
 #Параметры квадратного уравнения 𝑎, 𝑏, 𝑐 задаются вводом или через аргументы командной строки.
 
-
+'''
 import math
 import sys
 
@@ -49,8 +49,11 @@ def square_print(a, b, c, roots):
 
 if __name__ == "__main__":
     main()
-    
-    
+''' 
+
+![tree](./images/tree.png "tree")
+
+'''   
 import unittest
 from solv_square_equation import discriminant, roots, solv_square
 
@@ -86,3 +89,4 @@ class MyTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+'''
