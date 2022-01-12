@@ -1,6 +1,6 @@
 Create a script with a separate functions that uses the following keys: "without parameters", --all key, --target key
 
-'''
+```
 #!/usr/bin/env bash
 
 myfunc(){
@@ -24,6 +24,6 @@ allports(){
 }
 
 myfunc $1
-'''
+```
 
 ![functions](./images/16.png "functions")
