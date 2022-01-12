@@ -52,7 +52,7 @@ cat apache_logs.txt | awk '{print $1}' | sort | uniq -c | sort -nr | head -1 | a
 ```
 2. What is the most requested page?
 ```
-
+cat apache_logs.txt | awk '{print $7}' | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
 ```
 3. How many requests were there from each ip?
 ```
@@ -64,10 +64,17 @@ cat apache_logs.txt | awk '/error/{print $7}'
 ```
 5. What time did site get the most requests?
 ```
-
+echo "following list is the time with most requests: "
+cat apache_logs.txt | awk '{print $4}' | sort | uniq -c | sort -nr | head -13 | awk -F[ '{print $2}'
 ```
 6. What search bots have accessed the site? (UA + IP)
 ```
-
+cat apache_logs.txt | grep 'bot' | awk '{print $1 "\t " $(NF-1)}' | sort | uniq
 ```
+results:
 
+![functions](./images/16.png "functions")
+
+![script](./images/17.png "script")
+
+![script](./images/18.png "script")
