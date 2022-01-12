@@ -1,3 +1,5 @@
+ ### Part 1
+ 
  Create a script with a separate functions that uses the following keys:
  
  "without parameters", --all key, --target key
@@ -40,3 +42,32 @@ And check the results:
 
 
 ![functions](./images/16.png "functions")
+
+
+ ### Part 2
+ 
+ 1. Script for: From which ip were the most requests?
+```
+cat apache_logs.txt | awk '{print $1}' | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+```
+2. What is the most requested page?
+```
+
+```
+3. How many requests were there from each ip?
+```
+cat apache_logs.txt | awk '{print $1}' | sort | uniq -c | sort -nr | awk '{print "quantity = "$1 ",  IP = "$2}'
+```
+4. What non-existent pages were clients referred to?
+```
+cat apache_logs.txt | awk '/error/{print $7}'
+```
+5. What time did site get the most requests?
+```
+
+```
+6. What search bots have accessed the site? (UA + IP)
+```
+
+```
+
