@@ -71,10 +71,20 @@ cat apache_logs.txt | awk '{print $4}' | sort | uniq -c | sort -nr | head -13 | 
 ```
 cat apache_logs.txt | grep 'bot' | awk '{print $1 "\t " $(NF-1)}' | sort | uniq
 ```
-results:
+Results:
 
 ![functions](./images/19.png "functions")
 
 ![script](./images/17.png "script")
 
 ![script](./images/18.png "script")
+
+## Part 3
+
+Create a data backup script that takes the following data as parameters:
+1. Path to the syncing directory.
+
+```
+
+```
+
