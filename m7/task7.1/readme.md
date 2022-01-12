@@ -1,4 +1,5 @@
-Create a script with a separate functions that uses the following keys: "without parameters", --all key, --target key
+##Create a script with a separate functions that uses the following keys: "without parameters", --all key, --target key
+
 
 ```
 #!/usr/bin/env bash
@@ -25,5 +26,8 @@ allports(){
 
 myfunc $1
 ```
+
+And check the results:
+
 
 ![functions](./images/16.png "functions")
