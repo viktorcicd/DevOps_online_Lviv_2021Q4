@@ -73,7 +73,7 @@ cat apache_logs.txt | grep 'bot' | awk '{print $1 "\t " $(NF-1)}' | sort | uniq
 ```
 results:
 
-![functions](./images/16.png "functions")
+![functions](./images/19.png "functions")
 
 ![script](./images/17.png "script")
 
