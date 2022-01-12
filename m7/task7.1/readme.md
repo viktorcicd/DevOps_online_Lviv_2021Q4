@@ -13,7 +13,9 @@ myfunc(){
     echo "use parameter: --target  (key displays a list of open system TCP ports)"
   elif [ "$1" == "--all" ];
   then
-    allip
+    echo "please enter local subnet address: "
+    read x
+    allip $x
   else
     allports
   fi
@@ -22,7 +24,7 @@ myfunc(){
 The --all key displays the IP addresses and symbolic names of all hosts in the current subnet:
 ```
 allip(){
-  printf "IPs and names: \n`nmap -sn 192.168.31.1/24 | awk '/report/{print $5,$6}'`\n"
+  printf "IPs and names: \n`nmap -sn $x/24 | awk '/report/{print $5,$6}'`\n"
 }
 ```
 The --target key displays a list of open system TCP ports:
