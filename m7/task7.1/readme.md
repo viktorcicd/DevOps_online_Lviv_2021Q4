@@ -85,6 +85,14 @@ Create a data backup script that takes the following data as parameters:
 1. Path to the syncing directory.
 
 ```
+myfunc(){
+  echo "please input the syncing directory: "
+   read x
+  echo "please input the backup directory: "
+    read y
+   rsync -avh --delete $x $y
+ }
 
+myfunc
 ```
 
