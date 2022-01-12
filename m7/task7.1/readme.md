@@ -18,10 +18,15 @@ myfunc(){
     allports
   fi
 }
-
+```
+The --all key displays the IP addresses and symbolic names of all hosts in the current subnet:
+```
 allip(){
   printf "IPs and names: \n`nmap -sn 192.168.31.1/24 | awk '/report/{print $5,$6}'`\n"
 }
+```
+The --target key displays a list of open system TCP ports:
+```
 allports(){
   printf "Open ports: \n`netstat -tuna | awk -F: '/tcp/{print $2}' | awk '{print $1}'`\n"
 }
