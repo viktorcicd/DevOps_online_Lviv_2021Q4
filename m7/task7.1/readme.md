@@ -79,6 +79,10 @@ Results:
 
 ![script](./images/18.png "script")
 
+![script](./images/11.png "script")
+
+![script](./images/12.png "script")
+
 ## Part 3
 
 Create a data backup script that takes the following data as parameters:
