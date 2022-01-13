@@ -91,9 +91,12 @@ myfunc(){
    read x
   echo "please input the backup directory: "
     read y
-   rsync -avh --delete $x $y
+   rsync -avh --delete $x $y --log-file=my.txt
+   sed '/sent\|building\|delta-transmission\|total:\|total size/d' ./my.txt | awk '{print $1,$2,$4,$5,$6}' > mylog.txt
+
+#   echo "`date +%Y.%m.%d.%H.%M`" >> mylog.txt
  }
 
 myfunc
 ```
-
+![script](./images/20.png "script")
