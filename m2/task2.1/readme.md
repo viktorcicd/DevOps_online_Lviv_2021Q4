@@ -25,7 +25,7 @@ VMware ESXi/vSphere - suite features an exhaustive array of features for optimis
 ## Part 2
 
 
-Downloaded and instlled VM1 and VM2 with Ubuntu Desktop, Cloned
+Downloaded and instlled VM1 and VM2 with Ubuntu Desktop, Cloned, Group created
 
 ![script](./images/23.png "script")
 
