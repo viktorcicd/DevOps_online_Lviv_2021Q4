@@ -21,3 +21,15 @@ Oracle - one step further than its competitors in pursuing an open source policy
 VMware ESXi/vSphere - suite features an exhaustive array of features for optimising network services, storage and automation,
                       security program vShield that can be tested for free
 ```
+
+## Part 2
+
+
+Downloaded and instlled VM1 and VM2 with Ubuntu Desktop, Cloned
+
+![script](./images/23.png "script")
+
+
+
+
+
