@@ -35,7 +35,22 @@ Cloned, Group created, Exported, Imported, tested via ping multiple type of netw
 
 ![script](./images/25.png "script")
 
+![script](./images/29.png "script")
+
 ## Part 3
+
+![script](./images/30.png "script")
+
+![script](./images/31.png "script")
+
+![script](./images/32.png "script")
+
+![script](./images/33.png "script")
+
+![script](./images/34.png "script")
+
+
+
 
 
 
