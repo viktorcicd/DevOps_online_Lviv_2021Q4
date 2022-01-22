@@ -16,4 +16,11 @@ victor:x:1000:
 victor - group name
 x - group password 
 1000 - group id
+also there can be group members field with the list of user that are in this group
+
 ```
+Pseudo users:
+
+```
+pseudo users are pre-defined users such as 'mail', 'uucp, 'nobody', etc...).
+
