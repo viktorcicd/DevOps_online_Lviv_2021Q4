@@ -83,10 +83,73 @@ sudo userdel -r username
 
 9. What commands and keys should be used to lock and unlock a user account:
 ```
-sudo usermod -l username
-sudo usermod -u username
+sudo passwd -l username
+sudo passwd -u username
 ```
 
+10. How to remove a user's password and provide him with a password-free login for subsequent password change.
+```
+open the sudoers configuration file with sudo visudo, and add the following line to the file:
 
+username ALL=(ALL) NOPASSWD:ALL
+Close the editor to apply the changes, and test the effect on sudo in a new terminal.
+
+Delete the password for your user by running this command:
+
+sudo passwd -d `whoami`
+```
+11. Display the extended format of information about the directory, tell about the information columns displayed on the terminal:
+```
+ls -la or ll
+
+shows owners, groups, all - permissions
+link count
+onwer name
+group name
+size
+date and time
+name
+```
+
+![linux](./images/44.png "linux")
+
+12. Briefly describe the acronym for access rights.
+```
+Permissions are grouped by the following letter or digits:
+"r" - read - 4
+"w" - write - 2
+"x" - execute - 1
+"-" - no permission - 0
+Permissions can be set and combined in multiple ways for owner, group and all:
+rwx with value 7 - read write and execute combined
+rw- with value 6
+r-- with value 4
+--x with value 1
+--- with value 0
+
+can be set with "chmod" command
+
+```
+13. Sequence of defining the relationship between the file and the user.
+```
+After file is created, current user is set as owner, and file added to the users group
+```
+
+14. What commands are used to change the owner of a file (directory), as well as the mode of
+access to the file? Give examples, demonstrate on the terminal.
+```
+chown and chmod
+```
+![linux](./images/45.png "linux")
+
+![linux](./images/46.png "linux")
+
+![linux](./images/47.png "linux")
+
+15. What is an example of octal representation of access rights? Describe the umask
+command.
+```
+The user file creation mode mask (umask) is use to determine the file permission for newly created files
+```
 
 
