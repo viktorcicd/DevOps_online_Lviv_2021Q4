@@ -149,7 +149,52 @@ chown and chmod
 15. What is an example of octal representation of access rights? Describe the umask
 command.
 ```
+read - 4
+write - 2
+execute - 1
+no permission - 0
+
+stat -c '%a' filename  (to view access in octal)
+
 The user file creation mode mask (umask) is use to determine the file permission for newly created files
+Octal value : Permission
+0 : read, write and execute
+1 : read and write
+2 : read and execute
+3 : read only
+4 : write and execute
+5 : write only
+6 : execute only
+7 : no permissions
 ```
+![linux](./images/48.png "linux")
 
+16. Give definitions of sticky bits and mechanism of identifier substitution. Give an example of
+files and directories with these attributes.
+```
+This permission does not affect individual files. However, at the directory level, it restricts file deletion. 
+Only the owner (and root) of a file can remove the file within that directory. A common example of this is the /tmp directory
 
+to add and remove sticky bits
+chmod +t
+chmod -t
+```
+![linux](./images/49.png "linux")
+
+17. What file attributes should be present in the command script?
+```
+Some Linux-native filesystems support several attributes that you can adjust with the chattr command. The files and directories can have following attributes:
+a - append only
+c - compressed
+d - no dump
+e - extent format
+i - immutable
+j - data journaling
+s - secure deletion
+t - no tail-merging
+u - undeletable
+A - no atime updates
+D - synchronous directory updates
+S - synchronous updates
+T - top of directory hierarchy
+```
