@@ -135,8 +135,41 @@ kill -1 37287
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
 ```
+jobs, fg, bg, - job controlling tools. 
+fg - moves command to foreground from background
+bg - runs stoped jobs
+
+& sign keeps the job running on the backgroud
+sleep 100 &
+
+nohup used to keep the job running even id terminal is closed
+nohup ping 127.0.0.1 &
+```
+![linux](./images/64.png "linux")
+
+![linux](./images/65.png "linux")
+
+![linux](./images/67.png "linux")
+
+## Part 2
+
+1.Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. 
+(Description of the expected result of the commands + screenshots: command – result should be presented)
+```
+ssh username@host  (ssh victor@192.168.217.128)
+ssh username@host -p port
+ssh root@192.168.1.92 -i "C:\Users\username\.ssh\id_rsa"
+ssh-keygen -t rsa -b 4096
+```
+![linux](./images/68.png "linux")
+
+![linux](./images/69.png "linux")
+
+2. Implement basic SSH settings to increase the security of the client-server connection.
+```
 
 ```
+
 
 
 
