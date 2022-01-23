@@ -167,9 +167,33 @@ ssh-keygen -t rsa -b 4096
 
 2. Implement basic SSH settings to increase the security of the client-server connection.
 ```
-
+Strong Usernames and Passwords.
+Configure Idle Timeout Interval.
+Disable Passwords.
+Limit Users' SSH Access.
+Only Use SSH Protocol 2. 
+Allow Only Specific Clients. 
+Enable Two-Factor Authentication. 
+Use Public/Private Keys for Authentication with rsa -b 4096 or ed25519
 ```
+![linux](./images/70.png "linux")
 
+![linux](./images/71.png "linux")
+
+![linux](./images/72.png "linux")
+
+3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
+```
+ssh-keygen -t rsa -b 4096
+ssh-keygen -t dsa 
+ssh-keygen -t ecdsa -b 521 
+ssh-keygen -t ed25519
+```
+![linux](./images/73.png "linux")
+
+![linux](./images/74.png "linux")
+
+![linux](./images/75.png "linux")
 
 
 
