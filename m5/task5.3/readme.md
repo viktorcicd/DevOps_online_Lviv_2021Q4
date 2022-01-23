@@ -193,7 +193,9 @@ ssh-keygen -t ed25519
 
 ![linux](./images/74.png "linux")
 
-![linux](./images/75.png "linux")
+4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
+```
 
+```
 
 
