@@ -115,7 +115,27 @@ renice -n -19 -p 3534
 Press r. Give PID value of the process you want to change the process value. 
 Give renice value (from -20 to +19)
 ```
-16. Examine the kill command. How to send with the kill commandprocess control signal? Give an example of commonly used signals.
+16. Examine the kill command. How to send with the kill command process control signal? Give an example of commonly used signals.
+```
+kill command in Linux (located in /bin/kill), is a built-in command which is used to terminate processes manually.
+kill -l :To display all the available signals you can use
+kill pid (to kill process using pid)
+ 
+The most commonly used signals are:
+
+1 (HUP) - Reload a process.
+9 (KILL) - Kill a process.
+15 (TERM) - Gracefully stop a process.
+
+kill -1 37287
+```
+![linux](./images/62.png "linux")
+
+![linux](./images/63.png "linux")
+
+17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
+```
+
 ```
 
 
