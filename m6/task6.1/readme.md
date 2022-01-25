@@ -1,5 +1,6 @@
- ip address add 192.168.1.200/255.255.255.0 dev eth0
- 
+sudo ip addr add 192.168.1.4/24 dev enp0s3
+sudo ip addr add 192.168.1.1/24 dev enp0
+
 ![linux](./images/1.png "linux")
  
 ![linux](./images/2.png "linux")
