@@ -1,6 +1,14 @@
+```
 sudo ip addr add 192.168.1.4/24 dev enp0s3
-sudo ip addr add 192.168.1.1/24 dev enp0
+sudo ip addr add 192.168.1.1/24 dev enp0s8
+ip link set dev enp0s3 up
+ip link set dev enp0s8 up
 
+sudo route add default gw 192.168.1.1 enp0s3
+
+nameserver 8.8.8.8 added to /etc/resolv.conf
+
+```
 ![linux](./images/1.png "linux")
  
 ![linux](./images/2.png "linux")
