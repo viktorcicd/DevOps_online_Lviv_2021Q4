@@ -199,3 +199,7 @@ ssh-keygen -t ed25519
 ```
 ![linux](./images/75.png "linux")
 
+![linux](./images/76.png "linux")
+
+
+
