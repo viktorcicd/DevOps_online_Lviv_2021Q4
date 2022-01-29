@@ -16,6 +16,24 @@ range 192.168.1.2 192.168.1.100;
 option routers 192.168.1.1;
 
 option domain-name-servers 192.168.1.1;
+}
+
+service isc-dhcp-server start
+```
+
+Set static IP for VM1
+```
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp0s3:
+     dhcp4: no
+     addresses: [192.168.1.1/24]
+     nameservers:
+       addresses: [8.8.8.8,8.8.4.4]
+       
+sudo systemctl restart NetworkManager
 ```
 
 
