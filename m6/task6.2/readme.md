@@ -1,5 +1,7 @@
 Lets install and configure VM3
 
+![linux](./images/94.png "linux")
+
 Install and configure dhcp server
 ```
 sudo apt-get install isc-dhcp-server
