@@ -38,11 +38,13 @@ network:
 sudo systemctl restart NetworkManager
 ```
 
-![linux](./images/102.png "linux")
-
 ![linux](./images/103.png "linux")
 
+![linux](./images/102.png "linux")
+
 ![linux](./images/104.png "linux")
+
+I will use ISC-DHCP-SERVER and DNSMASQ as DHCP Servers:
 
 ![linux](./images/105.png "linux")
 
