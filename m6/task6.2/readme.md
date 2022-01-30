@@ -37,7 +37,6 @@ network:
        
 sudo systemctl restart NetworkManager
 ```
-![linux](./images/101.png "linux")
 
 ![linux](./images/102.png "linux")
 
