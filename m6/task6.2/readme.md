@@ -1,6 +1,6 @@
 Lets install and configure VM3
 
-![linux](./images/94.png "linux")
+![linux](./images/101.png "linux")
 
 Install and configure dhcp server
 ```
@@ -37,5 +37,25 @@ network:
        
 sudo systemctl restart NetworkManager
 ```
+![linux](./images/101.png "linux")
 
+![linux](./images/102.png "linux")
+
+![linux](./images/103.png "linux")
+
+![linux](./images/104.png "linux")
+
+![linux](./images/105.png "linux")
+
+![linux](./images/106.png "linux")
+
+![linux](./images/107.png "linux")
+
+![linux](./images/108.png "linux")
+
+![linux](./images/109.png "linux")
+
+![linux](./images/110.png "linux")
+
+![linux](./images/111.png "linux")
 
