@@ -54,7 +54,11 @@ sudo systemctl restart NetworkManager
 
 ![linux](./images/109.png "linux")
 
-![linux](./images/110.png "linux")
+Following configuration was used for DNS Server:
 
 ![linux](./images/111.png "linux")
+
+Lets ping the domain to check the access:
+
+![linux](./images/110.png "linux")
 
