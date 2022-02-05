@@ -262,3 +262,6 @@ Update your local package index, then finally install Jenkins:
   sudo apt-get update
   sudo apt-get install jenkins
 ```
+scp -v -o StrictHostKeyChecking=no index.html student@192.168.88.211:/var/www/html
+Wehavetocopyid_rsato/var/lib/jenkins/.ssh
+3)The/var/lib/jenkins/.sshdirectoryandfilesinsideofitshouldbeownedbyjenkins
