@@ -39,9 +39,9 @@ man finger
 Checking list of directories with ls:
 ```
 ls -alh
-
-![ls](./images/ls2.png "ls")
 ```
+![ls](./images/ls2.png "ls")
+
 ### Part 2
 
 I used the following commands:
