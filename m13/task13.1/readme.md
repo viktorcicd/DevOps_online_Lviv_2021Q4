@@ -265,3 +265,48 @@ Update your local package index, then finally install Jenkins:
 scp -v -o StrictHostKeyChecking=no index.html student@192.168.88.211:/var/www/html
 Wehavetocopyid_rsato/var/lib/jenkins/.ssh
 3)The/var/lib/jenkins/.sshdirectoryandfilesinsideofitshouldbeownedbyjenkins
+
+
+pipeline {
+    agent any
+
+    tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven 'Maven-3.8'
+    }
+
+    stages {
+        stage('Build jar') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/spring-projects/spring-petclinic.git'
+
+                // Run Maven on a Unix agent.
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+            
+        stage('Build image') {
+            steps {
+                // Get some code from a GitHub repository
+                echo 'building image'
+                withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'myPass', usernameVariable: 'myUser')])
+
+                // Run Maven on a Unix agent.
+                sh 'docker build -t petclinic1:v1 .'
+                sh "echo $myPass | docker login -u $myUser' --password-stdin"
+                sh 'docker push petclinic1:v1'
+
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+
+            
+                }
+            }
+        }
+    }
+}
+
